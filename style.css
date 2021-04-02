@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(#504b4b, #000000);
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box .eye {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: block;
+  background: #ffffff;
+  margin: 0 20px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 50px #000000 , inset 0 0 15px #242222, inset 0 0 30px #242222;
+          box-shadow: 0 5px 50px #000000 , inset 0 0 15px #242222, inset 0 0 30px #242222;
+}
+
+.box .eye::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #000000;
+  border: 15px solid #312d38;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
